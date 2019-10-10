@@ -51,10 +51,9 @@ public class ProgramStart {
         } catch (SQLException e) {
             System.out.println("ошибка соединения или SQL");
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             try {
-                if (!connection.isClosed()) {
+                if (connection != null) {
                     connection.close();
                     System.out.println("соединение закрыто");
                 }
