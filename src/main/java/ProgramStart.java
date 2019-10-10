@@ -64,3 +64,8 @@ public class ProgramStart {
         System.out.println("jdbc template");
     }
 }
+
+//PreparedStatement statement = connection.prepareStatement(SQL_FIND_ALL);
+//try с ресурсами
+//implDAO - в отдельный класс
+//Class DataSource
